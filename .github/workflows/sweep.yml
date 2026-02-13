@@ -8,7 +8,7 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '[ "nice_nano" ]'
+      board: '[ "nice_nano//zmk" ]'
       shield: '[ "splitkb_aurora_sweep_left nice_view_adapter nice_view", "splitkb_aurora_sweep_right nice_view_adapter nice_view" ]' 
       nav: '["vi"]'
       kconfig: '["CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y\nCONFIG_BT_CTLR_PHY_2M=n"]'
